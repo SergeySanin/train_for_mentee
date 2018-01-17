@@ -1,5 +1,5 @@
 var gulp          = require('gulp'),
-    less          = require('gulp-less'),
+    sass          = require('gulp-sass'),
     browserSync   = require('browser-sync'),
     concat        = require('gulp-concat'),
     uglify        = require('gulp-uglifyjs'),
@@ -15,15 +15,15 @@ var gulp          = require('gulp'),
     inlineCss     = require('gulp-inline-css');
 
 
-/**************************Компиляция LESS*************************************/
-gulp.task('less', function() {
-  return gulp.src('app/less/main.less')
-  .pipe(less())
+/**************************Компиляция SASS*************************************/
+gulp.task('sass', function() {
+  return gulp.src('./scss/main.scss')
+  .pipe(sass())
   .pipe(autoprefixer( ['last 15 versions', 'ie 8', 'ie 7'], { cascad: true }))
   .pipe(uncss({
             html: ['index.html', 'app/**/*.html']
         }))
-  .pipe(gulp.dest('app/css'))
+  .pipe(gulp.dest('css'))
   .pipe(browserSync.reload({stream: true}))
 });
 
@@ -41,7 +41,7 @@ gulp.task('scripts', function() {
 
 
 /**************************Сжатие CSS*******************************************/
-gulp.task('css-libs', ['less'], function(){
+gulp.task('css-libs', ['sass'], function(){
   return gulp.src(['app/css/main.css',
     'app/css/popup.css',])
   .pipe(cssnano())
@@ -54,7 +54,7 @@ gulp.task('css-libs', ['less'], function(){
 gulp.task('browser-sync', function(){
   browserSync({
     server: {
-      baseDir: 'app'
+      baseDir: './'
     },
     notify:false
   });
@@ -102,19 +102,19 @@ gulp.task('minify', function() {
 
 /*************************************WATCH************************************/
 gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'], function() {
-  gulp.watch('app/less/**/*.less', ['less']);
-  gulp.watch('app/*.html', browserSync.reload);
-  gulp.watch('app/js/**/*.js', browserSync.reload);
+  gulp.watch('./scss/**/*.scss', ['sass']);
+  gulp.watch('./*.html', browserSync.reload);
+  gulp.watch('./js/**/*.js', browserSync.reload);
 });
 
 
 
 /*************************************СБОРКА***********************************/
-gulp.task('build', ['clean', 'img', 'less', 'scripts', 'minify'], function() {
+gulp.task('build', ['clean', 'img', 'sass', 'scripts', 'minify'], function() {
 
   var buildCss = gulp.src([
-    'app/css/main.css',
-    'app/css/main.min.css',
+    './css/main.css',
+    './css/main.min.css',
   ])
   .pipe(gulp.dest('dist/css'));
 
