@@ -1,2 +1,41 @@
 body {
-  background-color: orange; }
+  background-color: white; }
+
+.page-header {
+  border: 2px solid red; }
+
+.footer {
+  border: 2px solid red; }
+
+.advantages {
+  border: 2px solid red; }
+
+.banner {
+  border: 2px solid red; }
+
+.button {
+  border: 2px solid red; }
+
+.contact {
+  border: 2px solid red; }
+
+.main-nav {
+  border: 2px solid red; }
+
+.platform-icons {
+  border: 2px solid red; }
+
+.platform-link {
+  border: 2px solid red; }
+
+.platforms {
+  border: 2px solid red; }
+
+.reviews {
+  border: 2px solid red; }
+
+.select-block {
+  border: 2px solid red; }
+
+.slider-nav {
+  border: 2px solid red; }
