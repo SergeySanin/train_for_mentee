@@ -1,3 +1,22 @@
 .page-header {
 	@include border;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	@include tablet-widths {
+		padding-top: 27px;
+		padding-bottom: 43px;
+	}
+	&__logo {
+		height: 22px;
+		width: 75px;
+		float: left;
+		@include tablet-widths {
+			width: 147px;
+  			height: 40px;
+		}
+	}
+	&__wrapper {
+		@include container;
+	}
 }
+

@@ -3,31 +3,43 @@
 <head>
 	<meta charset="UTF-8">
 	<title>pink</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 	<header class="page-header">
-		<div class="page-header__logo">
-			<img src="#" alt="logo">
-		</div>
-		<nav class="main-nav">
-			<span class="main-nav__toggle main-nav__toggle--closed"></span>
-		</nav>
+		<div class="page-header__wrapper clearfix">
+			<div class="page-header__logo">
+				<img src="#" alt="logo">
+			</div>
+			<nav class="main-nav">
+				<span class="main-nav__toggle main-nav__toggle--closed"></span>
+				<ul class="main-nav__list">
+					<li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a></li>
+					<li class="main-nav__item"><a class="main-nav__link" href="#">Фотографии</a></li>
+					<li class="main-nav__item"><a class="main-nav__link" href="#">Конкурс</a></li>
+					<li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
+				</ul>
+			</nav>
+	</div>
 	</header>
 	<section class="banner">
-		<div class="banner__main-photo">
-		</div>
-		<div class="banner__download">
-			<input class="button" type="button" value="Скачать приложение">
-			<div class="platforms">
-				<div class="platform-icons">
-					<a href="#" class="platform-link platform-link--apple"></a>
-					<a href="#" class="platform-link platform-link--android"></a>
-					<a href="#" class="platform-link platform-link--windows"></a>
-				</div>
-				<p class="platforms__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+		<div class="banner__wrapper">
+			<div class="banner__main-photo">
 			</div>
-		</div>
+			<div class="banner__download">
+				<input class="button" type="button" value="Скачать приложение">
+				<div class="platforms">
+					<div class="platform-icons">
+						<a href="#" class="platform-link platform-link--apple"></a>
+						<a href="#" class="platform-link platform-link--android"></a>
+						<a href="#" class="platform-link platform-link--windows"></a>
+					</div>
+					<p class="platforms__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+				</div>
+			</div>
+	</div>
 	</section>
 	<section class="advantages">
 		<div class="advantages__intro">
