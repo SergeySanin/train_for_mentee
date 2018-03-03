@@ -1,3 +1,57 @@
 .footer {
 	@include border;
+	padding-top: 50px;
+
+
+	&__wrapper {
+		@include container;
+	}
+	&__slogan {
+		margin: 0;
+		margin-bottom: 44px;
+		text-align: center;
+	}
+	&__map {
+		width: 100%;
+		min-height: 175px;
+		background-color: #cbdfad;
+	}
+	&__copyright {
+		display: none;
+	}
+
+
+	@include tablet-widths {
+		padding-bottom: 40px;
+
+
+		&__map {
+			min-height: 380px;
+			margin-bottom: 40px;
+		}
+		&__copyright {
+			display: block;
+			float: right;
+			max-width: 150px;
+		}
+			&__copyright-text {
+			margin: 0;
+			text-align: right;
+		}
+	}
+
+	@include desktop-widths {
+		padding-top: 75px;
+		padding-bottom: 78px;
+
+		&__map {
+			min-height: 500px;
+			margin-bottom: 73px;
+		}
+		&__copyright {
+			float: left;
+			margin-right: 0;
+			max-width: 150px;
+		}
+	}
 }

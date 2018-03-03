@@ -1,3 +1,15 @@
 .logo {
 	@include border;
+	float: left;
+	display: none;
+
+
+	@include tablet-widths {
+		display: block;
+		margin-right: 25%;
+	}
+
+	@include desktop-widths {
+		margin-right: 34%;
+	}
 }

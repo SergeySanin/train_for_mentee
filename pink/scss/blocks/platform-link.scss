@@ -1,4 +1,7 @@
 .platform-link {
 	@include border;
-	width: 55px;
+	display: inline-block;
+	min-width: 47px;
+	min-height: 56px;
+	margin: 0 auto;
 }

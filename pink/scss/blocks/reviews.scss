@@ -1,3 +1,44 @@
 .reviews {
 	@include border;
+	padding-top: 49px;
+	padding-bottom: 127px;
+
+
+
+	&__wrapper {
+		@include container;
+	}
+	&__item {
+		text-align: center;
+	}
+	&__item:nth-child(n+2) {
+		display: none;
+	}
+	&__author-name:nth-child(n+2) {
+		display: none;
+	}
+
+
+
+	@include tablet-widths {
+		&__item {
+			margin: 0;
+			margin-bottom: 50px;
+		}
+		&__author-name:nth-child(n+1) {
+			display: none;
+	}
+		&__author-name:nth-child(n+2) {
+			display: block;
+	}
+	}
+	@include desktop-widths {
+		padding-top: 190px;
+		padding-bottom: 50px;
+	}
+	&__items {
+		max-width: 677px;
+		margin: 0 auto;
+	}
+
 }

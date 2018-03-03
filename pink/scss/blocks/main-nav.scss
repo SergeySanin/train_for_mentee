@@ -3,9 +3,12 @@
 	float: right;
 	width: 50px;
 	height: 24px;
+
+
 	&__list {
 		display:none;
 	}
+	
 	@include desktop-widths {
 		width:auto;
 		margin: 0;
@@ -19,5 +22,12 @@
 		display: inline-block;
 		margin-right: 83px;
 	}
+	}
+
+
+	@include desktop-widths {
+		&__item:last-child {
+			margin-right: 0;
+		}
 	}
 }

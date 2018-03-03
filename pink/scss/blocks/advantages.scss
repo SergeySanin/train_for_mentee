@@ -1,3 +1,61 @@
 .advantages {
 	@include border;
+	padding-top: 46px;
+	background-color: $gray;
+
+
+	&__wrapper {
+		@include container;
+	}
+	&__intro {
+		min-height: 139px;
+		text-align: center;
+	}
+	&__list {
+		text-align: center;
+	}
+	&__photo {
+		min-height: 282px;
+		min-width: 157px;
+	}
+
+
+
+	@include tablet-widths {
+		&__list {
+			position: relative;
+			min-height: 600px;
+		}
+		&__item {
+			max-width: 300px;
+			position: absolute;
+			right: 0;
+		}
+		&__item:nth-child(n+2) {
+			top: 215px;
+		}
+		&__item:nth-child(n+3) {
+			top: 370px;
+		}
+		&__photo {
+			position: absolute;
+			left: 0;
+			min-height: 483px;
+    		min-width: 268px;
+		}
+	}
+
+
+	@include desktop-widths {
+		&__item {
+			position: static;
+			width: 235px;
+			float: left;
+			margin-right: 117px;
+			padding-top: 360px;
+		}
+		&__item:nth-child(n+3) {
+			margin-right: 0;
+		}
+	}
 }

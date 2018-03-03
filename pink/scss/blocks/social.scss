@@ -1,3 +1,23 @@
 .social {
 	@include border;
+	display: none;
+
+
+
+	@include tablet-widths {
+		display: block;
+		width: 180px;
+		float: left;
+
+		&__icon {
+			min-width: 50px;
+			min-height: 50px;
+			float: left;
+			width: 33.33%;
+		}
+	}
+
+	@include desktop-widths {
+		margin-right: 18%;
+	}
 }

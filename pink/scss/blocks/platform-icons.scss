@@ -1,3 +1,10 @@
 .platform-icons {
 	@include border;
+	width: 205px;
+	margin: 0 auto;
+	padding-left: 12px;
+	padding-right: 12px;
+	margin-bottom: 30px;
+	min-height: 56px;
+	text-align: center;
 }
