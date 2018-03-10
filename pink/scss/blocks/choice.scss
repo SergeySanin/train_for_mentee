@@ -1,3 +1,61 @@
 .choice {
 	@include border;
+	padding-top: 39px;
+	background-color: $gray;
+
+	&--mobile {
+		display: none;
+	}
+
+	&__wrapper {
+		@include container;
+	}
+	&__title {
+		margin: 0;
+		text-align: center;
+		font-size: 14px;
+		color: $red;
+		text-transform: uppercase;
+		margin-bottom: 42px;
+	}
+
+}
+
+@include tablet-widths {
+	.choice--mobile {
+		display: block;
+	}
+	.choice--hidden {
+		display: none;
+	}
+	.choice--visibility {
+		background-color: $white;
+		padding-top: 10px;
+		.choice__title {
+			position: absolute;
+			margin: 0;
+			top: -12px;
+			left: 50%;
+			transform: translate(-50%);
+			background-color: $white;
+			min-width: 444px;
+			padding-left: 25px;
+			padding-right: 25px;
+		}
+	}
+	.choice__wrapper {
+		position: relative;
+	}
+}
+.desktop-hidden {
+	@include desktop-widths {
+		display: none;
+	}
+}
+
+@include desktop-widths {
+	.choice--visibility {
+		padding-top: 0;
+		padding-bottom: 69px;
+	}
 }

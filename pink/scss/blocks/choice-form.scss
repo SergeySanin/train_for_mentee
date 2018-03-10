@@ -1,3 +1,77 @@
 .choice-form {
 	@include border;
+
+	&__input {
+		margin-bottom: 47px;
+		margin-right: 33px;
+	}
+
+
+	@include tablet-widths {
+		padding-top: 53px;
+		margin-bottom: 69px;
+		&--float {
+				.choice-form__label--visibility {
+			display: none;
+		}
+		}
+	}
+	@include desktop-widths {
+		&--float {
+		padding: 54px 60px 10px;
+		margin-bottom: 0;
+		.choice-form__label {
+			float: left;
+			width: 33.33%;
+			.choice-form__input {
+				margin-right: 23px;
+			}
+			}
+		.choice-form__label--hidden {
+			display: none;
+		}
+		.choice-form__label--visibility {
+			display: block;
+		}
+		}
+	}
+}
+.choice-form--desktop {
+	display: none;
+	@include tablet-widths {
+		display: none;
+	}
+	@include desktop-widths {
+		display: block;
+		float: right;
+		width: 47%;
+		padding: 0;
+		margin: 0;
+		position: relative;
+		padding-top: 50px;
+		text-align: left;
+		padding-left: 75px;
+
+		.choice__title {
+			margin: 0;
+			position: absolute;
+			top: -12px;
+			left: 50%;
+			transform: translate(-50%);
+			background-color: $white;
+			padding-left: 25px;
+			padding-right: 25px;
+			min-width: 382px;
+		}
+		.choice-form__input {
+			margin-bottom: 62px;
+		}
+	}
+}
+.choice--visibility  {
+	.choice-form {
+		@include tablet-widths {
+			padding-left: 60px;
+		}
+	}
 }

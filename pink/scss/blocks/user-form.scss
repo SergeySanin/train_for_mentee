@@ -1,3 +1,52 @@
 .user-form {
 	@include border;
+	text-align: left;
+
+	.note {
+		margin: 0;
+		text-align: center;
+	}
+	@include desktop-widths {
+		width: 47%;
+		float: left;
+
+		&--desktop {
+			width: 100%;
+		}
+	}
+}
+.user-contacts--hidden {
+	@include tablet-widths {
+		.user-form {
+			padding-top: 47px;
+			padding-bottom: 33px;
+			padding-left: 60px;
+			padding-right: 60px;
+		}
+	}
+}
+
+.comment {
+	@include tablet-widths {
+		.user-form {
+			padding-top: 47px;
+			padding-bottom: 53px;
+			padding-left: 60px;
+			padding-right: 60px;
+			margin-bottom: 130px;
+			position: relative;
+		}
+	}
+}
+.comment {
+	@include desktop-widths {
+		.user-form {
+		float: none;
+		width: 100%;
+		padding-top: 44px;
+		padding-bottom: 45px;
+		padding-left: 60px;
+		padding-right: 60px;
+		}
+	}
 }

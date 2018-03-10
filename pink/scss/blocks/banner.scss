@@ -48,3 +48,22 @@
 
 	}
 }
+
+.banner--form-page {
+	min-height: 170px;
+	padding-top: 36px;
+	padding-bottom: 55px;
+
+	.banner__title {
+		margin: 0 auto;
+		max-width: 470px;
+		position: static;
+	}
+
+	@include tablet-widths {
+		padding-top: 90px;
+		padding-bottom: 90px;
+		min-height: 330px;
+		height: auto;
+	}
+}

@@ -1,3 +1,12 @@
 .note {
 	@include border;
+	text-align: center;
+
+	@include tablet-widths {
+		position: absolute;
+		max-width: 296px;
+		right: 0;
+		bottom: -108px;
+		margin: 0;
+	}
 }
