@@ -1,9 +1,8 @@
 ﻿@import "./default";
-@import "helpers/variables";
-@import "helpers/mixins";
+@import "utils/variables";
+@import "utils/mixins";
 @import "layout/page-header";
 @import "layout/footer";
-@import "global/fonts";
 @import "blocks/advantages";
 @import "blocks/banner";
 @import "blocks/block";
