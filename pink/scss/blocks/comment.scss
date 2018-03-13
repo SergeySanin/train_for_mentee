@@ -1,0 +1,17 @@
+.comment {
+	@include border;
+	padding-top: 30px;
+	padding-bottom: 14px;
+
+
+	&__wrapper {
+		@include container;
+	}
+	@include tablet-widths {
+		padding-top: 0;
+		padding-bottom: 0;
+	&__wrapper {
+		position: relative;
+	}
+}
+}

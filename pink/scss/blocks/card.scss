@@ -1,0 +1,123 @@
+.card {
+	@include border;
+	margin-bottom: 20px;
+
+	@include tablet-widths {
+		&:not(.card--main-photo) {
+			float: left;
+			margin-right: 20px;
+			margin-bottom: 20px;
+			width: 300px;
+			&:nth-child(even) {
+				margin-right: 0;
+			}
+			.card__description {
+				height: 155px;
+				font-size: 14px;
+				padding-top: 30px;
+				padding-bottom: 30px;
+				padding-left: 27px;
+				position: relative;
+			}
+		}
+		&__photo:not(.card__photo--resize) {
+			height: 300px;
+		}
+	}
+
+	@include desktop-widths {
+		&:not(.card--main-photo) {
+			&:nth-child(3) {
+				margin-right: 0;
+			}
+			&:nth-child(even) {
+				margin-right: 20px;
+			}
+			&:last-child {
+				margin-right: 0px;
+			}
+		}
+		&__photo:not(.card__photo--resize) {
+			height: 300px;
+		}
+	}
+
+	&__photo {
+		width: 100%;
+		height: 100%;
+
+		&--resize {
+			@include tablet-widths {
+				min-height: 560px;
+			}
+				@include desktop-widths {
+				min-height: 570px;
+			}
+		}
+	}
+	&__description {
+		background: $gray;
+		margin-top: -8px;
+		padding-top: 25px;
+		padding-bottom: 26px;
+		padding-left: 17px;
+		padding-right: 25px;
+	}
+	&__text {
+		margin: 0;
+		margin-bottom: 15px;
+		&--visibility {
+			display: none;
+		}
+
+		&--left {
+			@include tablet-widths {
+				float: left;
+			}
+		}
+			&--right {
+			@include tablet-widths {
+				float: right;
+			}
+		}
+			&--hidden {
+			@include tablet-widths {
+				display: none;
+			}
+		}
+		&--visibility {
+			@include tablet-widths {
+				display: block;
+				clear: both;
+			}
+		}
+
+		&--red {
+			color: $red;
+		}
+	}
+	&__text:last-child {
+		margin-bottom: 0;
+	}
+	&--main-photo {
+		position: relative;
+
+		@include tablet-widths {
+			margin-bottom: 50px;
+		}
+	}
+	&__sticker {
+		position: absolute;
+		color: $white;
+		background: $red;
+		padding: 12px 20px;
+		top: 0;
+		right: 20px;
+		margin: 0;
+
+		@include tablet-widths {
+			top: 57px;
+			right: 92px;
+		}
+	}
+}

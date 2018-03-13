@@ -1,0 +1,19 @@
+.form-button {
+	@include border;
+	width: 100%;
+	padding: 23px 45px;
+	background-color: $green;
+	color: $white;
+	font-size: 18px;
+	margin-bottom: 46px;
+	border-radius: 2px;
+
+
+	@include tablet-widths {
+		position: absolute;
+		max-width: 296px;
+		left: 0;
+		bottom: -130px;
+		margin: 0;
+	}
+}

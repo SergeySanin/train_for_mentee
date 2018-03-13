@@ -1,0 +1,34 @@
+@mixin border {
+	border: 2px solid red;
+}
+@mixin mobile-widths {
+	@media (max-width: $screen-small) {
+		@content
+	}
+}
+@mixin tablet-widths {
+	@media (min-width: $screen-medium) {
+		@content
+	}
+}
+@mixin desktop-widths {
+	@media (min-width: $screen-larger) {
+		@content
+	}
+}
+
+@mixin container {
+	@include mobile-widths {
+  width: 280px;
+  margin: 0 auto;
+}	
+	@include tablet-widths {
+		width: 620px;
+		margin: 0 auto;
+	}
+	@include desktop-widths {
+		width: 940px;
+		margin: 0 auto;
+	}
+}
+

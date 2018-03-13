@@ -1,0 +1,36 @@
+.effect {
+	@include border;
+	display: none;
+
+	&__wrapper {
+		@include container
+	}
+
+
+
+
+	@include tablet-widths {
+		display: block;
+
+		&__img {
+			min-width: 238px;
+			min-height: 276px;
+			float: left;
+			margin-right: 70px;
+		}
+	}
+
+	@include desktop-widths {
+		background-color: $gray;
+
+
+		&__img {
+			width: 25%;
+			min-height: 345px;
+		}
+		&__description {
+			float: left;
+			width: 67%;
+		}
+	}
+}

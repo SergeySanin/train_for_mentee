@@ -1,0 +1,17 @@
+.slider-nav {
+	@include border;
+	min-height: 20px;
+	text-align: center;
+
+
+	&__btn {
+		display: inline-block;
+		min-width: 10px;
+		min-height: 10px;
+		background-color: $dark;
+	}
+
+	@include desktop-widths {
+		display: none;
+	}
+}

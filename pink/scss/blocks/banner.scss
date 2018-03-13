@@ -1,0 +1,93 @@
+.banner {
+	@include border;
+	background-color: $dark;
+	padding-bottom: 35px;
+	min-height: 720px;
+
+	&__title {
+		color: $white;
+		text-align: center;
+	}
+	&__wrapper {
+		@include container;
+	}
+	&__main-photo {
+		height: 392px;
+		margin-bottom: 28px;
+	}
+	&__download {
+		text-align: center;
+	}
+
+
+	@include tablet-widths {
+		padding-top: 74px;
+		padding-bottom: 112px;
+		height: 620px;
+		position: relative;
+
+		
+		&__title {
+			max-width:186px;
+			position: absolute;
+			z-index: 1;
+			left: 98px;
+			top: 70px;
+		}
+		&__main-photo {
+			min-height: 545px;
+			width: 100%;
+		}
+		&__download {
+			position: absolute;
+			z-index: 1;
+			left: 40px;
+			bottom: 112px;
+			max-width: 300px;
+		}
+
+	}
+}
+
+.banner--form-page {
+	min-height: 170px;
+	padding-top: 36px;
+	padding-bottom: 55px;
+
+	.banner__title {
+		margin: 0 auto;
+		max-width: 470px;
+		position: static;
+	}
+
+	@include tablet-widths {
+		padding-top: 90px;
+		padding-bottom: 90px;
+		min-height: 330px;
+		height: auto;
+	}
+}
+.banner--photo-page {
+	min-height: 170px;
+	padding-top: 36px;
+	padding-bottom: 55px;
+
+		.banner__title {
+		margin: 0 auto;
+		max-width: 240px;
+	}
+
+	@include tablet-widths {
+		min-height: 330px;
+		height: 0;
+		padding-top: 81px;
+		padding-bottom: 150px;
+
+		.banner__title {
+			position: static;
+			font-size: 50px;
+			max-width: 350px;
+			line-height: 1.2;
+		}
+	}
+}

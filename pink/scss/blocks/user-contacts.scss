@@ -1,0 +1,61 @@
+.user-contacts {
+	@include border;
+	padding-top: 55px;
+	padding-bottom: 45px;
+	text-align: center;
+
+	&__wrapper {
+		@include container;
+	}
+
+
+	&__text {
+		margin: 0;
+		margin-bottom: 20px;
+	}
+
+	@include tablet-widths {
+		padding-top: 105px;
+		padding-bottom: 60px;
+
+		&__text {
+			margin-bottom: 75px;
+		}
+	}
+	@include tablet-widths {
+		padding-bottom: 69px;
+	}
+}
+
+.user-contacts--form-page {
+	@include tablet-widths {
+		display: none;
+}
+}
+.user-contacts--hidden {
+	display: none;
+	@include tablet-widths {
+		display: block;
+		padding-top: 0;
+
+	.user-contacts__title {
+		margin: 0;
+		text-align: center;
+		font-size: 14px;
+		color: $red;
+		text-transform: uppercase;
+		position: absolute;
+		top: -12px;
+		left: 50%;
+		transform: translate(-50%);
+		background-color: $white;
+		padding-left: 25px;
+		padding-right: 25px;
+		}
+
+	.user-contacts__wrapper {
+		position: relative;
+	}
+}
+
+}

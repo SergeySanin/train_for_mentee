@@ -1,0 +1,51 @@
+.button {
+	@include border;
+	text-align: center;
+	padding: 20px 40px;
+	margin-bottom: 32px;
+}
+
+.post__form {
+	.button {
+		width: 100%;
+		border: 3px solid;
+		border-radius: 30px;
+
+		@include tablet-widths {
+			padding: 20px 0;
+			&--active {
+				margin-bottom: 24px;
+			}
+		}
+		@include desktop-widths {
+			float: left;
+			width: 183px;
+			&--active {
+				margin-right: 44px;
+			}
+		}
+	}
+	.button--active {
+		border-color: $red;
+		color: $red;
+		background: transparent;
+		margin-bottom: 12px;
+		@include desktop-widths {
+			margin-bottom: 0;
+		}
+	}
+	.button--disable {
+		background: transparent;
+		border-color: rgba(40, 54, 69, 0.1);
+		color: rgba(40, 54, 69, 0.1);
+		margin-bottom: 0;
+	}
+	.button--active:hover {
+		cursor: pointer;
+	}
+	.button--disable:hover {
+		cursor: pointer;
+		border-color: $red;
+		color: $red;
+	}
+}

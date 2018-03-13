@@ -1,0 +1,99 @@
+.post {
+	@include border;
+	background: $gray;
+	padding-top: 20px;
+	padding-bottom: 41px;
+	position: relative;
+
+	&__wrapper {
+		@include container;
+	}
+	&__edit {
+		text-align: center;
+		padding-top: 42px;
+		padding-bottom: 67px;
+		margin-top: -8px;
+	}
+	&__edit:after {
+		content: "";
+		position: absolute;
+		height: 1px;
+		width: 100%;
+		background: rgba(40, 54, 69, 0.1);
+		left: 0;
+		bottom: 215px;
+	}
+	&__edit-icon {
+		width: 33.33%;
+	}
+	&__regulator {
+		width: 100%;
+		margin-top: 32px;
+	}
+	&__regulator--hidden {
+		display: none;
+	}
+
+	@include tablet-widths {
+		padding-top: 57px;
+		padding-bottom: 54px;
+		&__photo {
+			float: left;
+			margin-right: 47px;
+			width: 300px;
+			height: 400px;
+		}
+		&__edit {
+			float: left;
+			padding: 0;
+			width: 273px;
+			padding-left: 50px;
+			&-icon {
+				display: none;
+			}
+		}
+		&__edit:after {
+			display: none;
+		}
+		&__regulator {
+			margin: 0;
+			padding-top: 25px;
+			padding-bottom: 25px;
+			position: relative;
+		}
+		&__regulator:after {
+			content: "";
+			position: absolute;
+			height: 1px;
+			width: 273px;
+			background: rgba(40, 54, 69, 0.1);
+			left: -50px;
+			bottom: 0;
+		}
+		&__regulator--visibility {
+			display: block;
+		}
+		&__form {
+			float: left;
+			width: 273px;
+			padding-top: 55px;
+		}
+	}
+
+	@include desktop-widths {
+		&__photo {
+			margin-right: 90px;
+		}
+		&__edit {
+			width: 410px;
+			padding-right: 30px;
+		}
+		&__regulator:after {
+			width: 410px;
+		}
+		&__form {
+			padding-top: 146px;
+			width: 410px;
+		}
+	}
+}

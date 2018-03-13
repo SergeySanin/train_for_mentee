@@ -1,0 +1,7 @@
+.gallery {
+	@include border;
+
+	&__wrapper {
+		@include container;
+	}
+}

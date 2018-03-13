@@ -3,131 +3,192 @@
 <head>
 	<meta charset="UTF-8">
 	<title>pink</title>
-	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 	<header class="page-header">
-		<div class="page-header__logo">
-			<img src="#" alt="logo">
-		</div>
-		<nav class="main-nav">
-			<span class="main-nav__toggle main-nav__toggle--closed"></span>
-		</nav>
+		<div class="page-header__wrapper clearfix">
+			<div class="page-header__logo">
+				<img src="#" alt="logo">
+			</div>
+			<nav class="main-nav">
+				<span class="main-nav__toggle main-nav__toggle--closed"></span>
+				<ul class="main-nav__list">
+					<li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a></li>
+					<li class="main-nav__item"><a class="main-nav__link" href="#">Фотографии</a></li>
+					<li class="main-nav__item"><a class="main-nav__link" href="#">Конкурс</a></li>
+					<li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
+				</ul>
+			</nav>
+	</div>
 	</header>
 	<section class="banner">
-		<div class="banner__main-photo">
-		</div>
-		<div class="banner__download">
-			<input class="button" type="button" value="Скачать приложение">
-			<div class="platforms">
-				<div class="platform-icons">
-					<a href="#" class="platform-link platform-link--apple"></a>
-					<a href="#" class="platform-link platform-link--android"></a>
-					<a href="#" class="platform-link platform-link--windows"></a>
-				</div>
-				<p class="platforms__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+		<div class="banner__wrapper">
+			<h1 class="banner__title">Взгляните на жизнь иначе!</h1>
+			<div class="banner__main-photo">
 			</div>
-		</div>
+			<div class="banner__download">
+				<input class="button" type="button" value="Скачать приложение">
+				<div class="platforms">
+					<div class="platform-icons">
+						<a href="#" class="platform-link platform-link--apple"></a>
+						<a href="#" class="platform-link platform-link--android"></a>
+						<a href="#" class="platform-link platform-link--windows"></a>
+					</div>
+					<p class="platforms__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+				</div>
+			</div>
+	</div>
 	</section>
 	<section class="advantages">
-		<div class="advantages__intro">
-			<p class="advantages__slogan">Устали от серости мегаполиса?</p>
-			<p class="advantages__slogan">Нам есть, что вам предложить!</p>
-		</div>
-		<div class="advantages__list">
-			<div class="advantages__item">
-				<h2 class="advantages__title">Поднимает настроение</h2>
-				<p class="advantages__text">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
+		<div class="advantages__wrapper">
+			<div class="advantages__intro">
+				<p class="advantages__slogan">Устали от серости мегаполиса?</p>
+				<p class="advantages__slogan">Нам есть, что вам предложить!</p>
 			</div>
-			<div class="advantages__item">
-				<h2 class="advantages__title">Меняет мир вокруг</h2>
-				<p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+			<div class="advantages__list">
+				<div class="advantages__item">
+					<h2 class="advantages__title">Поднимает настроение</h2>
+					<p class="advantages__text">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
+				</div>
+				<div class="advantages__item">
+					<h2 class="advantages__title">Меняет мир вокруг</h2>
+					<p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+				</div>
+				<div class="advantages__item">
+					<h2 class="advantages__title">Заводит новых друзей</h2>
+					<p class="advantages__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+				</div>
+				<img src="#" alt="" class="advantages__photo">
 			</div>
-			<div class="advantages__item">
-				<h2 class="advantages__title">Заводит новых друзей</h2>
-				<p class="advantages__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+	</div>
+	</section>
+	<section class="effect">
+		<div class="effect__wrapper clearfix">
+			<img src="#" alt="" class="effect__img">
+			<div class="effect__description">
+				<h2 class="effect__title">Эффект на 24 часа!</h2>
+				<p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+				<a href="" class="effect__link">Узнать больше об исследовании</a>
 			</div>
-			<img src="#" alt="" class="advantages__photo">
 		</div>
 	</section>
 	<section class="reviews">
-		<div class="reviews__items">
-			<blockquote class="reviews__item">
-				<cite class="reviews__author-name">Николай Петров</cite>
-				<p class="reviews__author-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-			</blockquote>
-			<blockquote class="reviews__item">
-				<cite class="reviews__author-name">Николай Петров</cite>
-				<p class="reviews__author-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-			</blockquote>
-			<blockquote class="reviews__item">
-				<cite class="reviews__author-name">Николай Петров</cite>
-				<p class="reviews__author-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-			</blockquote>
-		</div>
-		<div class="slider-nav">
-			<label for="#" class="slider-nav__btn"></label>
-			<label for="#" class="slider-nav__btn"></label>
-			<label for="#" class="slider-nav__btn"></label>
-		</div>
-	</section>
-	<section class="select-block">
-		<div class="select-block__list">
-				<div class="select-block__item">
-					<div class="select-block__header">
-						<h1 class="select-block__title">Стандарт</h1>
-						<span class="select-block__count">3,99 USD</span>
-					</div>
-					<ul class="select-block__table">
-						<li class="select-block__field">Розовый фильтр</li>
-						<li class="select-block__field">Смайлики</li>
-						<li class="select-block__field">Комментарии</li>
-					</ul>
-				</div>
-					<div class="select-block__item">
-					<div class="select-block__header">
-						<h1 class="select-block__title">Стандарт</h1>
-						<span class="select-block__count">3,99 USD</span>
-					</div>
-					<ul class="select-block__table">
-						<li class="select-block__field">Розовый фильтр</li>
-						<li class="select-block__field">Смайлики</li>
-						<li class="select-block__field">Комментарии</li>
-					</ul>
-				</div>
-					<div class="select-block__item">
-					<div class="select-block__header">
-						<h1 class="select-block__title">Стандарт</h1>
-						<span class="select-block__count">3,99 USD</span>
-					</div>
-					<ul class="select-block__table">
-						<li class="select-block__field">Розовый фильтр</li>
-						<li class="select-block__field">Смайлики</li>
-						<li class="select-block__field">Комментарии</li>
-					</ul>
-				</div>
+		<div class="reviews__wrapper">
+			<div class="reviews__items">
+				<blockquote class="reviews__item">
+					<cite class="reviews__author-name">Николай Петров</cite>
+					<p class="reviews__author-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+					<cite class="reviews__author-name">Николай Петров<br><span>25 лет, водитель трамвая</span></cite>
+				</blockquote>
+				<blockquote class="reviews__item">
+					<cite class="reviews__author-name">Николай Петров</cite>
+					<p class="reviews__author-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+				</blockquote>
+				<blockquote class="reviews__item">
+					<cite class="reviews__author-name">Николай Петров</cite>
+					<p class="reviews__author-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+				</blockquote>
+			</div>
 			<div class="slider-nav">
 				<label for="#" class="slider-nav__btn"></label>
 				<label for="#" class="slider-nav__btn"></label>
 				<label for="#" class="slider-nav__btn"></label>
 			</div>
-		</div>
+	</div>
+	</section>
+	<section class="select-block">
+		<div class="select-block__wrapper">
+			<div class="select-block__list clearfix">
+					<div class="select-block__item">
+						<div class="select-block__header">
+							<h1 class="select-block__title">База</h1>
+							<span class="select-block__count">3,99 USD</span>
+						</div>
+						<ul class="select-block__table">
+							<li class="select-block__field">Розовый фильтр</li>
+							<li class="select-block__field">Смайлики</li>
+							<li class="select-block__field">Комментарии</li>
+						</ul>
+					</div>
+						<div class="select-block__item">
+						<div class="select-block__header">
+							<h1 class="select-block__title">База</h1>
+							<span class="select-block__count">1,99 USD</span>
+						</div>
+						<ul class="select-block__table">
+							<li class="select-block__field">Розовый фильтр</li>
+							<li class="select-block__field">Смайлики</li>
+							<li class="select-block__field">Комментарии</li>
+						</ul>
+					</div>
+						<div class="select-block__item">
+						<div class="select-block__header">
+							<h1 class="select-block__title">Стандарт</h1>
+							<span class="select-block__count">3,99 USD</span>
+						</div>
+						<ul class="select-block__table">
+							<li class="select-block__field">Розовый фильтр</li>
+							<li class="select-block__field">Смайлики</li>
+							<li class="select-block__field">Комментарии</li>
+						</ul>
+					</div>
+							<div class="select-block__item">
+						<div class="select-block__header">
+							<h1 class="select-block__title">АНЛИМ</h1>
+							<span class="select-block__count">9,99 USD</span>
+						</div>
+						<ul class="select-block__table">
+							<li class="select-block__field">Розовый фильтр</li>
+							<li class="select-block__field">Смайлики</li>
+							<li class="select-block__field">Комментарии</li>
+						</ul>
+					</div>
+				<div class="slider-nav">
+					<label for="#" class="slider-nav__btn"></label>
+					<label for="#" class="slider-nav__btn"></label>
+					<label for="#" class="slider-nav__btn"></label>
+				</div>
+			</div>
+	</div>
 	</section>
 	<footer class="footer">
-		<p class="footer__slogan">Остались вопросы? Свяжитесь с нами!</p>
-		<div class="contact">
-			<h3 class="contact__title">Звоните:<a href="#" class="contact__link">+7 (812) 555-66-66</a></h3>
-			<h3 class="contact__title">Пишите:<a href="#" class="contact__link">mail@htmlacademy.ru</a></h3>
-			<h3 class="contact__title">Приезжайте в гости:<a href="#" class="contact__link">ул. Большая Конюшенная, 19/8
-</a></h3>
-		</div>
+		<div class="footer__wrapper">
+			<p class="footer__slogan">Остались вопросы? Свяжитесь с нами!</p>
+			<div class="contact clearfix">
+				<div class="contact__block">
+					<h3 class="contact__title">Звоните:</h3>
+					<a href="#" class="contact__link">+7 (812) 555-66-66</a>
+				</div>
+				<div class="contact__block">
+					<h3 class="contact__title">Пишите:</h3>
+					<a href="#" class="contact__link">mail@htmlacademy.ru</a>
+				</div>
+				<div class="contact__block">
+					<h3 class="contact__title">Приезжайте в гости:</h3>
+					<a href="#" class="contact__link">ул. Большая Конюшенная, 19/8</a>
+				</div>
+			</div>
+	</div>
 		<div class="footer__map">
 			
 		</div>
+		<div class="footer__wrapper clearfix">
+			<div class="logo">
+			<img src="#" alt="Logo">
+		</div>
+		<div class="social clearfix">
+			<div class="social__icon social__icon--tw"></div>
+			<div class="social__icon social__icon--fb"></div>
+			<div class="social__icon social__icon--yt"></div>
+		</div>
+		<div class="footer__copyright">
+			<p class="footer__copyright-text">Разработано<img class="footer__copyright-logo" src="#" alt="footer-logo"></p>
+		</div>
+		</div>
 	</footer>
-<!-- Что это за название к файлу? Основной файл нужно называть main.js или app.js-->
-
 <script src="js/main.js"></script>
 </body>
 </html>

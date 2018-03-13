@@ -1,0 +1,8 @@
+.platforms {
+	@include border;
+	padding: 0 25px;
+
+	&__text {
+		color: $white;
+	}
+}

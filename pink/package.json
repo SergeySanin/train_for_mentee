@@ -31,6 +31,7 @@
   "dependencies": {
     "css-mqpacker": "^4.0.1",
     "gulp": "^3.9.1",
+    "npm": "^5.7.1",
     "rename": "^1.0.3"
   },
   "repository": {

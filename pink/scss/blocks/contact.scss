@@ -1,0 +1,44 @@
+.contact {
+	@include border;
+	text-align: center;
+
+
+
+
+	@include tablet-widths {
+		&__block:nth-child(1) {
+			width: 50%;
+			float: left;
+			text-align: center;
+		}
+			&__block:nth-child(2) {
+			width: 50%;
+			float: right;
+			text-align: center;
+		}
+			&__block:nth-child(3) {
+			width: 100%;
+			float: left;
+			text-align: center;
+			margin-top: 60px;
+		}
+	}
+
+	@include desktop-widths {
+		margin-bottom: 25px;
+
+
+		
+		&__block:nth-child(1) {
+			width: 33.33%;
+		}
+		&__block:nth-child(2) {
+			width: 33.33%;
+		}
+		&__block:nth-child(3) {
+			width: 33.33%;
+			margin-top: 0;
+		}
+
+	}
+}
